@@ -9,7 +9,6 @@
 
 .header__menu {
   display: flex;
-  display: inline-flex;
   list-style: circle;
   gap: 35px;
   padding-left: 50px;
@@ -105,30 +104,22 @@
 }
 
 .cover__description-text {
+  /*Аукцион вещей, в которые никто не верил*/
   position: absolute;
   inset: 668px 413px 61px 50px;
   margin: 0;
   padding: 0;
   color: white;
-  font-family: "Raleway-Regular", sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 90%;
-  word-spacing: 5px;
-  text-transform: uppercase;
-}
-
-.cover__description-text {
-  /*Аукцион вещей, в которые никто не верил*/
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
+  letter-spacing: 90%;
   letter-spacing: 0%;
+  word-spacing: 5px;
   text-transform: uppercase;
-  word-spacing: 20px;
   white-space: nowrap;
+  word-spacing: 20px;
 }
 
 .lots {
@@ -220,7 +211,6 @@
 
 .card__text {
   display: flex;
-  align-items: center;
   align-items: flex-end;
   position: relative;
   max-width: 254px;
@@ -291,7 +281,6 @@
   background: black;
   margin-top: 35px;
   margin-left: 47px;
-  
 }
 
 .about__title {
@@ -303,7 +292,6 @@
   text-transform: uppercase;
   margin: 140px 300px 100px 0;
   white-space: nowrap;
-  
 }
 
 .about__text {
@@ -323,7 +311,7 @@
   justify-content: space-between;
   width: 1100px;
   height: 180px;
-  margin-top: 115px;  
+  margin-top: 115px;
 }
 
 .footer__link_list {
@@ -345,8 +333,7 @@
 }
 
 .footer__menu {
-  display: grid;  
-  
+  display: grid;
 }
 
 .footer__menu-link {
