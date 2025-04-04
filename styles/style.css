@@ -4,7 +4,7 @@
   min-height: 293px;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .header__menu {
@@ -247,7 +247,7 @@
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 87px;
+  line-height: 84px;
   margin: 0 0 0 40px;
 }
 
