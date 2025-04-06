@@ -214,6 +214,7 @@
   text-transform: uppercase;
   text-decoration-style: solid;
   text-decoration: underline;
+  text-underline-offset: 3px;
   margin-bottom: 35px;
 }
 
@@ -241,7 +242,7 @@
   grid-template-columns: 1fr 2fr;
   width: 1052px;
   margin: auto;
-  margin-top: 85px;
+  margin-top: 125px;
 }
 
 .about__logo-image {
@@ -259,8 +260,7 @@
   height: 240px;
   border-radius: 50%;
   background: black;
-  margin-top: 35px;
-  margin-left: 47px;
+  margin: 0 0 0 50px;
 }
 
 .about__title {
@@ -268,9 +268,7 @@
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  line-height: 100%;
-  margin: 140px 0 105px 0;
-  padding: 0 0 0 7px;
+  margin: 100px 0 0 10px;
 }
 
 .about__text {
@@ -278,9 +276,14 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 24px;
-  margin-right: 30px;
-  padding: 0 0 0 8px;
+  letter-spacing: 0.2px;
+}
+
+.about__paragraph {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0 0 8px;
+  row-gap: 24px;
 }
 
 .footer {
@@ -289,7 +292,7 @@
   align-items: center;
   justify-content: space-between;
   width: 1100px;
-  margin-top: 127px;
+  margin-top: 150px;
 }
 
 .address__footer {
