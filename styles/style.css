@@ -11,7 +11,7 @@
   display: flex;
   list-style: circle;
   gap: 33px;
-  margin: 0 0 7px 50px;
+  margin: 0 0 9px 50px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -39,10 +39,10 @@
   flex-direction: column;
   max-width: 240px;
   justify-self: end;
-  margin: 0 87px 0 0;
+  margin: 0 86px 3px 0;
 }
 
-.list-iteheader__linksm_no-bullit {
+.header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
@@ -73,8 +73,6 @@
 
 .cover__title {
   display: flex;
-  margin: auto;
-  justify-content: space-between;
   min-width: 1000px;
   flex-direction: column;
   color: white;
@@ -83,23 +81,26 @@
   font-size: 100px;
   text-transform: uppercase;
   letter-spacing: 30px;
-  gap: 15px;
+  margin: auto;
+  line-height: 1.35;
 }
 
-.aligned-text {
+.aligned-text_left {
+  /*Не совсем понял ошибку в 97 строке (сейчас 89), класс "aligned-text"
+  был для выравнивания первого слова "ОНО", возможно не самое понятное название для класса,
+  но я его взял из задания. Сейчас переделал расположение элементов, общие вынесены в класс
+  cover__title переименовал "aligned-text" в "aligned-text_left" для удобства*/
   text-align: start;
   margin-top: 60px;
-  padding-left: 30px;
 }
 
 .aligned-text_center {
   text-align: center;
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .aligned-text_right {
   text-align: end;
-  padding-left: 645px;
 }
 
 .cover__description {
@@ -108,7 +109,8 @@
   justify-content: space-between;
   width: 1000px;
   align-self: center;
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
+  align-items: center;
 }
 
 .cover__description-text {
@@ -121,8 +123,10 @@
   text-transform: uppercase;
   white-space: wrap;
   word-spacing: 18.5px;
-  margin: auto;
-  margin-left: 0;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .button {
@@ -137,17 +141,17 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 100%;
-  text-align: center;
   text-transform: uppercase;
-  margin-left: 40px;
-  margin: auto;
-  margin-right: 0;
 }
 
 .lots {
   width: 1052px;
   margin: auto;
   margin-top: 155px;
+}
+
+.card-link {
+  text-decoration: none;
 }
 
 .lots__heading {
@@ -165,7 +169,6 @@
   /*Настройки размеров и расположения карточек в лотах*/
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 25px;
   background-size: cover;
   background-position: center;
@@ -174,44 +177,29 @@
 
 .card_type_film {
   /*Класс первой карточки в лотах*/
-  display: flex;
-  position: relative;
-  width: 334px;
-  min-height: 596px;
-  flex-direction: column;
-  align-items: center;
   background-image: url("../images/card-lot-01.jpg");
-  z-index: -2;
 }
 
 .card_type_book {
   /*Класс второй карточки в лотах*/
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 334px;
-  min-height: 596px;
   background-image: url("../images/card-lot-02.jpg");
-  z-index: -2;
 }
 
 .card_type_picture {
   /*Класс третьей карточки в лотах*/
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 334px;
-  min-height: 596px;
   background-image: url("../images/card-lot-03.jpg");
-  background-size: cover;
-  z-index: -2;
 }
 
 .card {
   display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+  width: 334px;
+  min-height: 596px;
+  z-index: -2;
+  background-size: cover;
 }
 
 .card__title {
@@ -227,12 +215,9 @@
   text-decoration-style: solid;
   text-decoration: underline;
   margin-bottom: 35px;
-  text-underline-offset: 3px;
 }
 
 .card__text {
-  display: flex;
-  position: relative;
   max-width: 254px;
   height: 100%;
   color: white;
@@ -307,8 +292,7 @@
   margin-top: 127px;
 }
 
-.footer__link_list {
-  /*Первый пункт в подвале*/
+.address__footer {
   display: grid;
   max-width: 240px;
   justify-self: start;
